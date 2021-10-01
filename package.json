@@ -1,0 +1,68 @@
+{
+  "name": "zkd-starter",
+  "namespace": "zkdStarter",
+  "version": "1.0.0",
+  "author": {
+    "name": "zakoduje",
+    "email": "mateusz@zakoduje.com.pl",
+    "url:": "https://zakoduje.com.pl/"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "GPL2",
+  "browserslist": [
+    "last 2 versions",
+    "android 4",
+    "opera 12"
+  ],
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "npm run rmdist && npm run rmbuild && npm run production && npm run production -- --env.mixfile=webpack.build.mix.js && node webpack.build.clean.mix.js",
+    "rmdist": "rimraf dist",
+    "rmbuild": "rimraf build",
+    "pot": "mkdir -p ./resources/lang && find ./resources ./zkd ./app -iname '*.php' -o -iname '*.js' | xargs xgettext --add-comments=TRANSLATORS --force-po --from-code=UTF-8 --default-domain=en_US -k__ -k_e -k_n:1,2 -k_x:1,2c -k_ex:1,2c -k_nx:4c,12 -kesc_attr__ -kesc_attr_e -kesc_attr_x:1,2c -kesc_html__ -kesc_html_e -kesc_html_x:1,2c -k_n_noop:1,2 -k_nx_noop:3c,1,2, -k__ngettext_noop:1,2 -o resources/lang/zkd.pot && find ./resources -iname '*.blade.php' | xargs xgettext --language=Python --add-comments=TRANSLATORS --force-po --from-code=UTF-8 --default-domain=en_US -k__ -k_e -k_n:1,2 -k_x:1,2c -k_ex:1,2c -k_nx:4c,12 -kesc_attr__ -kesc_attr_e -kesc_attr_x:1,2c -kesc_html__ -kesc_html_e -kesc_html_x:1,2c -k_n_noop:1,2 -k_nx_noop:3c,1,2, -k__ngettext_noop:1,2 -j -o resources/lang/zkd.pot",
+    "block": "node webpack/block.js $1",
+    "regenerate": "cd ../../../ && wp media regenerate",
+    "srp:staging": "cd ../../../ && wp search-replace starter.test starter.staging --all-tables && wp search-replace http://starter.staging https://starter.staging --all-tables && wp search-replace http://starter.staging https://starter.staging --all-tables",
+    "srp:local": "cd ../../../ && wp search-replace starter.staging starter.test --all-tables && wp search-replace https://starter.test http://starter.test --all-tables && wp search-replace https://starter.test http://starter.test --all-tables"
+  },
+  "engines": {
+    "node": ">= 12.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "2.2.2",
+    "change-case": "^4.1.1",
+    "cross-env": "^7.0.2",
+    "fs-extra": "^9.0.1",
+    "laravel-mix": "^5.0.4",
+    "laravel-mix-bundle-analyzer": "^1.0.5",
+    "laravel-mix-copy-watched": "^2.2.4",
+    "replace-in-file": "^6.1.0",
+    "resolve-url-loader": "3.1.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.7",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "custom-event-polyfill": "^1.0.7",
+    "jquery": "^3.5.1",
+    "regenerator-runtime": "^0.13.7",
+    "swiper": "^5.4.2"
+  }
+}

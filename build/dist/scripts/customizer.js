@@ -1,0 +1,1 @@
+"use strict";(window.zkdStarterWebpackJsonpCallback=window.zkdStarterWebpackJsonpCallback||[]).push([[4],{3:function(n,t,c){n.exports=c("LnCJ")},LnCJ:function(n,t,c){(function(n){wp.customize("blogname",function(t){t.bind(function(t){return n(".brand").text(t)})})}).call(this,c("EVdn"))}},[[3,0,1]]]);

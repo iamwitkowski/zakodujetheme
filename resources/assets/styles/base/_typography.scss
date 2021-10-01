@@ -1,0 +1,42 @@
+@include fontFace('Open Sans', 400, normal, 'OpenSans', 'Regular');
+@include fontFace('Open Sans', 400, italic, 'OpenSans', 'Italic');
+@include fontFace('Open Sans', 700, normal, 'OpenSans', 'Bold');
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.4rem;
+	font-weight: 400;
+	font-family: $f-main;
+	color: $c-text;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	font-family: $f-headings;
+	color: $c-primary;
+	font-weight: 700;
+}
+
+a {
+	color: $c-primary;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}

@@ -1,0 +1,20 @@
+{
+    "/scripts/manifest.js": "/scripts/manifest.js?id=b048869d445b6f1aab70",
+    "/scripts/vendor.js": "/scripts/vendor.js?id=8af99d936d8243ac8c95",
+    "/blocks/base/public.js": "/blocks/base/public.js?id=9ce53d84487fc0ded790",
+    "/blocks/base/public.css": "/blocks/base/public.css?id=afb9071dd51e12a510ca",
+    "/styles/main.css": "/styles/main.css?id=b8c6c5fd7b0f5784a741",
+    "/styles/vendor.css": "/styles/vendor.css?id=d41d8cd98f00b204e980",
+    "/styles/admin.css": "/styles/admin.css?id=1281c00c22e860a3e6bf",
+    "/scripts/admin.js": "/scripts/admin.js?id=6c825407cd010e957041",
+    "/scripts/customizer.js": "/scripts/customizer.js?id=61d658b8c93eea165ef4",
+    "/scripts/main.js": "/scripts/main.js?id=531264c1f3f01b7692c2",
+    "/fonts/OpenSans-Bold.woff": "/fonts/OpenSans-Bold.woff?id=490f8f48aada8e902143",
+    "/fonts/OpenSans-Bold.woff2": "/fonts/OpenSans-Bold.woff2?id=43167b015776d2932933",
+    "/fonts/OpenSans-Italic.woff": "/fonts/OpenSans-Italic.woff?id=d9afd8d427da97cc3989",
+    "/fonts/OpenSans-Italic.woff2": "/fonts/OpenSans-Italic.woff2?id=8d83b5ec30a8f7649206",
+    "/fonts/OpenSans-Regular.woff": "/fonts/OpenSans-Regular.woff?id=ce02d59330a50dd2528d",
+    "/fonts/OpenSans-Regular.woff2": "/fonts/OpenSans-Regular.woff2?id=1232438477a6e9967e68",
+    "/images/carrot.svg": "/images/carrot.svg?id=3ea30da08490e5b36671",
+    "/images/contact_bg.png": "/images/contact_bg.png?id=cd17d09be82b5c8abf84"
+}

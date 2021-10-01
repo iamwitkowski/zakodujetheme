@@ -1,0 +1,31 @@
+body .cookie-bar.alert {
+	position: relative;
+	margin: 0;
+	padding: 1.2rem 1rem;
+	background: $c-primary;
+	border-radius: 0;
+
+	.cookie-bar {
+		&__message {
+			padding-right: 50px;
+
+			p {
+				font-size: 12px;
+				font-weight: 700;
+				color: #fff;
+			}
+		}
+
+		&__close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 10px;
+			height: 100%;
+			color: #fff;
+			opacity: 0.9;
+			line-height: 0;
+			text-shadow: inherit;
+		}
+	}
+}

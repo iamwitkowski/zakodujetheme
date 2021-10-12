@@ -2,7 +2,7 @@
 /**
  * App: Main
  *
- * 
+ *
  */
 namespace App\Controllers;
 
@@ -13,7 +13,7 @@ class App extends Controller
   /**
    * Get: Current Title
    *
-   * 
+   *
    * @return bool
    */
   public static function title(): string
@@ -24,7 +24,7 @@ class App extends Controller
   /**
    * Check: Sidebar Displaying
    *
-   * 
+   *
    * @return bool
    */
   public static function displaySidebar(): bool
@@ -35,7 +35,7 @@ class App extends Controller
   /**
    * Get: Site Logo
    *
-   * 
+   *
    * @return array
    */
   public function siteLogo(): string
@@ -56,5 +56,13 @@ class App extends Controller
       return '<img src="' . $logoStandard . '" ' . $srcset . ' />';
     }
     return '';
+  }
+
+  public function featured() {
+    if (function_exists('get_field')) {
+      $id = get_option( 'page_for_posts' );
+      $featured = get_field('featured_post',$id );
+    }
+    return $featured;
   }
 }

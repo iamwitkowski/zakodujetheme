@@ -1,0 +1,95 @@
+@import '../../../node_modules/swiper/css/swiper.min.css';
+
+.featured {
+  margin-bottom: 6rem;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    width: 40%;
+    padding: 5.5rem 4rem;
+    position: absolute;
+    left: 0;
+    box-shadow: $box-shadow;
+  }
+
+  &__image {
+    width: 70%;
+    height: 50rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__post {
+    &--data {
+      font-size: 1.4rem;
+      display: block;
+
+      &.--author {
+        font-weight: 700;
+      }
+
+      &.--category {
+        display: inline-block;
+        font-size: 1.2rem;
+        background: $c-green;
+        border-radius: 2.5rem;
+        padding: 0.6rem 1.2rem;
+        margin-right: .5rem;
+        color: $c-white;
+        margin-bottom: 2rem;
+      }
+
+      &.--read-time {
+        margin-top: 4rem;
+        text-align: right;
+      }
+    }
+  }
+  &__accent {
+    background-color: $c-light-rgba;
+    width: 24rem;
+    height: 24rem;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    border-radius: 100%;
+    filter: blur(60px);
+    z-index: -1;
+    &.--green {
+      background-color: $c-green-rgba;
+      width: 24rem;
+      height: 24rem;
+      position: absolute;
+      top: 24rem;
+      left: 4rem;
+      border-radius: 100%;
+      filter: blur(60px);
+    }
+  }
+}
+
+.swiper-navigation {
+  position: absolute;
+  bottom: 2rem;
+  width: 11rem;
+
+  button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+    border: .1rem solid #efefef;
+    background: $c-white;
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}

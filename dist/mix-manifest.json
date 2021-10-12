@@ -1,6 +1,7 @@
 {
     "/blocks/base/public.js": "/blocks/base/public.js",
     "/blocks/base/public.css": "/blocks/base/public.css",
+    "/styles/main.css": "/styles/main.css",
     "/styles/vendor.css": "/styles/vendor.css",
     "/styles/admin.css": "/styles/admin.css",
     "/scripts/admin.js": "/scripts/admin.js",
@@ -9,6 +10,5 @@
     "/scripts/manifest.js": "/scripts/manifest.js",
     "/scripts/vendor.js": "/scripts/vendor.js",
     "/images/carrot.svg": "/images/carrot.svg",
-    "/images/contact_bg.png": "/images/contact_bg.png",
-    "/styles/main.css": "/styles/main.css"
+    "/images/contact_bg.png": "/images/contact_bg.png"
 }

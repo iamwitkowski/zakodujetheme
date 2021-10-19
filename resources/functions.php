@@ -28,3 +28,8 @@ require dirname(__FILE__).'/inc/bootstrap.php';
 
   add_filter('acf/format_value/type=textarea', 'zkd_acf_orphans', 10, 3);
   add_filter('acf/format_value/type=wysiwyg', 'zkd_acf_orphans', 10, 3);
+
+  function zkd_custom_excerpt_length( $length ) {
+    return 15;
+  }
+  add_filter( 'excerpt_length', 'zkd_custom_excerpt_length', 999 );

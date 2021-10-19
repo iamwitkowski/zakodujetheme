@@ -2,7 +2,7 @@
 /**
  * Theme: Widgets
  *
- * 
+ *
  */
 namespace zkd\Theme;
 
@@ -36,8 +36,8 @@ class Widgets
     ]);
 
     register_sidebar([
-      'name' => 'Footer 3',
-      'id' => 'footer-3',
+      'name' => 'Sidebar',
+      'id' => 'sidebar-1',
       'before_widget' => '<div class="%1$s %2$s widget">',
       'after_widget' => '</div>',
       'before_title' => '<h4>',
@@ -51,6 +51,18 @@ class Widgets
     for ($i = 1; $i <= 4; $i++) {
       if (is_active_sidebar('footer-' . $i)) :
         $widgets[] = 'footer-' . $i;
+      endif;
+    }
+    return $widgets;
+  }
+
+
+  public function getSidebarIds(): array
+  {
+    $widgets = array();
+    for ($i = 1; $i <= 4; $i++) {
+      if (is_active_sidebar('sidebar-' . $i)) :
+        $widgets[] = 'sidebar-' . $i;
       endif;
     }
     return $widgets;

@@ -1,9 +1,11 @@
 {
     "/blocks/base/public.js": "/blocks/base/public.js",
     "/blocks/base/public.css": "/blocks/base/public.css",
+    "/blocks/categories/public.css": "/blocks/categories/public.css",
     "/styles/main.css": "/styles/main.css",
     "/styles/vendor.css": "/styles/vendor.css",
     "/styles/admin.css": "/styles/admin.css",
+    "/blocks/categories/public.js": "/blocks/categories/public.js",
     "/scripts/admin.js": "/scripts/admin.js",
     "/scripts/customizer.js": "/scripts/customizer.js",
     "/scripts/main.js": "/scripts/main.js",

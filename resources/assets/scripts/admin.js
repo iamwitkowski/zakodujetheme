@@ -1,7 +1,7 @@
 import adminMenu from './components/adminMenu'
 import mediaSVG from './components/mediaSVG'
 
-const hideBlocks = () => {
+/*const hideBlocks = () => {
   wp.domReady(function () {
     console.log(wp);
 
@@ -29,7 +29,7 @@ const hideBlocks = () => {
   });
 };
 
-
+*/
 
 jQuery(document).ready(function () {
   adminMenu.init();
@@ -37,5 +37,5 @@ jQuery(document).ready(function () {
 
 
 
-  hideBlocks();
+//  hideBlocks();
 });

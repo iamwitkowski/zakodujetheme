@@ -1,3 +1,54 @@
 .post-tile {
-	margin-bottom: 2rem;
+  border: .1rem solid #e4e4e7;
+  padding: 2rem;
+  max-width: 80rem;
+  box-shadow: $box-shadow;
+  display: flex;
+  justify-content: space-between;
+  transition: .2s ease-in-out;
+  &:hover {
+    box-shadow: $box-shadow-hover;
+    cursor: pointer;
+    background: $c-light-gray;
+  }
+
+  &__header {
+    margin-right: 2.5rem;
+  }
+
+  &__thumbnail {
+    margin: 0;
+    img {
+      max-width: 23rem;
+      height: 23rem;
+      border-radius: 2rem;
+    }
+  }
+
+  &__data {
+    font-size: 1.4rem;
+    display: block;
+
+    &.--author {
+      font-weight: 700;
+    }
+
+    &.--category {
+      display: inline-block;
+      font-size: 1.2rem;
+      background: $c-green;
+      border-radius: 2.5rem;
+      padding: 0.6rem 1.2rem;
+      margin-right: .5rem;
+      color: $c-white;
+      margin-bottom: 2rem;
+    }
+
+    &.--read-time {
+      position: absolute;
+      right: 2rem;
+      bottom: 3rem;
+      margin-top: 4rem;
+    }
+  }
 }

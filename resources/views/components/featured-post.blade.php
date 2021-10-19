@@ -17,27 +17,27 @@
           @endphp
           <div class="swiper-slide featured__single">
             <div class="wrapper">
-              <div class="featured__content --glassed --rounded">
+              <div class="featured__content ui__glassed ui__rounded">
                   @foreach($categories as $cat)
-                  <a href="{!! get_category_link($cat) !!}" class="featured__post--data --category">{!! $cat->name !!}</a>
+                  <a href="{!! get_category_link($cat) !!}" class="post-tile__data --category">{!! $cat->name !!}</a>
                   @endforeach
                   <h3>
                     <a href="{!! get_the_permalink($id) !!}}">
                     {!! $title !!}
                     </a>
                   </h3>
-                <span class="featured__post--data --author">{!! $author_name !!}</span>
-                <span class="featured__post--data --date">{!! $post_date !!}</span>
-                    <span class="featured__post--data --read-time">Przeczytasz w <strong>2 minuty</strong></span>
+                <span class="post-tile__data --author">{!! $author_name !!}</span>
+                <span class="post-tile__data --date">{!! $post_date !!}</span>
+                    <span class="post-tile__data --read-time">Przeczytasz w <strong>2 minuty</strong></span>
               </div>
-              <div class="featured__image --rounded" style="background-image: url({{$thumb}});"></div>
+              <div class="featured__image ui__rounded" style="background-image: url({{$thumb}});"></div>
             </div>
           </div>
         @endforeach
       </div>
       <div class="swiper-navigation">
-        <button class="swiper-button-prev --glassed"><</button>
-        <button class="swiper-button-next --glassed">></button>
+        <button class="swiper-button-prev ui__glassed">@icon('arrow')</button>
+        <button class="swiper-button-next ui__glassed">@icon('arrow')</button>
       </div>
     </div>
   </div>

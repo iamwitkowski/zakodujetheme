@@ -2,7 +2,7 @@
 /**
  * Template: Header
  *
- * 
+ *
  */
 do_action('get_header')
 @endphp

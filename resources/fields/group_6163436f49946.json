@@ -3,6 +3,25 @@
     "title": "Blog - Features",
     "fields": [
         {
+            "key": "field_616ebea71d5ec",
+            "label": "Intro text",
+            "name": "intro_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_616343a46eb58",
             "label": "Featured Post",
             "name": "featured_post",
@@ -61,5 +80,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1633989117
+    "modified": 1634647734
 }

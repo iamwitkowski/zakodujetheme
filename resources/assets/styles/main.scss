@@ -12,9 +12,11 @@
   'layout/base',
   'layout/site-header',
   'layout/site-footer',
+  'layout/ui',
   'layout/sidebar';
 
 @import
+  'components/button',
   'components/post-title',
   'components/comments',
   'components/pagination',

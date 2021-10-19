@@ -12,6 +12,7 @@
     width: 40%;
     padding: 5.5rem 4rem;
     position: absolute;
+    height: 30rem;
     left: 0;
     box-shadow: $box-shadow;
   }
@@ -24,32 +25,6 @@
     background-repeat: no-repeat;
   }
 
-  &__post {
-    &--data {
-      font-size: 1.4rem;
-      display: block;
-
-      &.--author {
-        font-weight: 700;
-      }
-
-      &.--category {
-        display: inline-block;
-        font-size: 1.2rem;
-        background: $c-green;
-        border-radius: 2.5rem;
-        padding: 0.6rem 1.2rem;
-        margin-right: .5rem;
-        color: $c-white;
-        margin-bottom: 2rem;
-      }
-
-      &.--read-time {
-        margin-top: 4rem;
-        text-align: right;
-      }
-    }
-  }
   &__accent {
     background-color: $c-light-rgba;
     width: 24rem;
@@ -85,6 +60,15 @@
     box-shadow: $box-shadow;
     border: .1rem solid #efefef;
     background: $c-white;
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    &.swiper-button-prev {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
     &:before {
       display: none;
     }

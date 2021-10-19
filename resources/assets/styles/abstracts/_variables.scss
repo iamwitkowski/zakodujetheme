@@ -4,6 +4,8 @@
 $c-primary: #282828;
 $c-text: #282828;
 $c-white: #ffffff;
+$c-gray: #e4e4e7;
+$c-light-gray: #f7f7f7;
 
 $c-light: #66fcf1;
 $c-light-rgba: rgba(102, 252, 241, 0.4);
@@ -11,7 +13,8 @@ $c-light-rgba: rgba(102, 252, 241, 0.4);
 $c-green: #45a29e;
 $c-green-rgba: rgba(69, 162, 158, 0.4);
 
-$box-shadow: 0px 20px 39px -28px rgba(11, 12, 16, 1);
+$box-shadow-hover: 0px 20px 39px -28px rgba(11, 12, 16, 1);
+$box-shadow: 0px 15px 29px -21px rgba(11, 12, 16, 1);
 /**
  * Variables: Fonts
  */

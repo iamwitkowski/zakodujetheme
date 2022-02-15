@@ -16,7 +16,7 @@ class Base extends Block
   /**
    * Constructor
    *
-   * 
+   *
    */
   public function __construct(string $id, Gutenberg $instance)
   {
@@ -32,7 +32,7 @@ class Base extends Block
    *
    * @param array $block RAW block data from ACF.
    * @param array $data  Parsed block data.
-   * 
+   *
    * @return array
    */
   protected function filter(array $data, array $block = array()): array

@@ -1,7 +1,27 @@
 .site-header {
-  background: transparent;
+  background: $c-white;
   z-index: 10;
   width: 100%;
+  position: fixed;
+  top: 0;
+  transition: .3s ease-in-out;
+
+  &.stick {
+    background: $c-white!important;
+    .site-header__menu {
+      li {
+        a {
+          color: $c-primary;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .site-header__wrapper {
+      height: 5rem;
+    }
+  }
+
+
 
   &__wrapper {
     display: flex;
@@ -102,8 +122,8 @@
       a {
         display: block;
         padding: 1rem 0;
-        color: $c-primary;
-        font-size: 1.6rem;
+        color: $c-white;
+        font-size: 1.4em;
         line-height: 2.6rem;
         @include down(md) {
           font-size: 2.5rem;
@@ -117,6 +137,9 @@
         }
       }
     }
+
+
+
 
     .sub-menu {
       list-style-type: none;
@@ -195,9 +218,15 @@
         }
       }
     }
-
     @include up(md) {
       display: none;
     }
   }
+}
+
+.page-template-frontpage .site-header {
+  background: transparent;
+}
+.page-template-frontpage .site-header__menu li a {
+  color: $c-white;
 }

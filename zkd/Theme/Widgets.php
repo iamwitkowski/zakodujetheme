@@ -36,6 +36,16 @@ class Widgets
     ]);
 
     register_sidebar([
+      'name' => 'Footer 3',
+      'id' => 'footer-3',
+      'before_widget' => '<div class="%1$s %2$s widget">',
+      'after_widget' => '</div>',
+      'before_title' => '<h4>',
+      'after_title' => '</h4>'
+    ]);
+
+
+    register_sidebar([
       'name' => 'Sidebar',
       'id' => 'sidebar-1',
       'before_widget' => '<div class="%1$s %2$s widget">',

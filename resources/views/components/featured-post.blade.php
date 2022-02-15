@@ -36,8 +36,8 @@
         @endforeach
       </div>
       <div class="swiper-navigation">
-        <button class="swiper-button-prev ui__glassed">@icon('arrow')</button>
-        <button class="swiper-button-next ui__glassed">@icon('arrow')</button>
+        <button class="swiper-button-prev ui__glassed  --white">@icon('arrow')</button>
+        <button class="swiper-button-next ui__glassed  --white">@icon('arrow')</button>
       </div>
     </div>
   </div>

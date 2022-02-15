@@ -1,14 +1,13 @@
 .post-tile {
   border: .1rem solid #e4e4e7;
   padding: 2rem;
-  max-width: 80rem;
+  max-width: 88rem;
   box-shadow: $box-shadow;
   display: flex;
   justify-content: space-between;
   transition: .2s ease-in-out;
   &:hover {
     box-shadow: $box-shadow-hover;
-    cursor: pointer;
     background: $c-light-gray;
   }
 

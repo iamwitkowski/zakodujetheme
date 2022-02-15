@@ -1,0 +1,27 @@
+@import '../../../../assets/styles/block';
+
+.block-logo-carousel {
+  position: relative;
+  padding: 10rem 0;
+
+  h2 {
+    text-align: center;
+    font-size: 6rem;
+  }
+
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    img{
+      max-width: 15rem;
+      height: auto;
+      filter: grayscale(.8);
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+}

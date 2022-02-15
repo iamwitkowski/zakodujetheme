@@ -1,0 +1,26 @@
+@import '../../../../assets/styles/block';
+
+.block-portfolio {
+  position: relative;
+  padding: 10rem 0;
+
+
+  &__title {
+    color: $c-white;
+    text-align: center;
+    font-size: 6rem;
+  }
+
+  &__subtitle {
+    text-align: center;
+    color: $c-white;
+    margin-bottom: 4rem;
+    font-size: 3.2rem;
+  }
+
+  .button {
+    width: 20rem;
+    text-align: center;
+    margin: auto;
+  }
+}

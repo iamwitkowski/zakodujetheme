@@ -1,6 +1,12 @@
 .site-footer {
-  background: #393833;
-  padding: 3rem 0;
+  background: $c-main;
+  padding: 6rem 0;
+  color: $c-white;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $c-white;
+  }
+
   .copyrights-footer {
     p {
       font-size: 1.3rem;

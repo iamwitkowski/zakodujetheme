@@ -44,6 +44,14 @@ class Widgets
       'after_title' => '</h4>'
     ]);
 
+    register_sidebar([
+      'name' => 'Widget na stronie głównej',
+      'id' => 'fp-widget',
+      'before_widget' => '<div class="%1$s %2$s widget">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3>',
+      'after_title' => '</h3>'
+    ]);
 
     register_sidebar([
       'name' => 'Sidebar',
@@ -64,6 +72,13 @@ class Widgets
       endif;
     }
     return $widgets;
+  }
+
+
+  public function getFrontpageId(): array
+  {
+    $widget = dynamic_sidebar('fp-widget');
+    return $widget;
   }
 
 

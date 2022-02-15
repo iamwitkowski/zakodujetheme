@@ -11,7 +11,7 @@
     <h1 class="single-header__heading">
       {!! App::title() !!}
     </h1>
-    <a class="button --white --circle" href="https://www.facebook.com/sharer/sharer.php?u={!! get_the_permalink() !!}" target="_blank">
+    <a class="button --circle" href="https://www.facebook.com/sharer/sharer.php?u={!! get_the_permalink() !!}" target="_blank">
       @icon('share')
     </a>
   </div>

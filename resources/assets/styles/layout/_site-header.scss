@@ -13,6 +13,9 @@
         a {
           color: $c-primary;
           font-size: 1.4rem;
+          @include down(md) {
+            color: $c-white;
+          }
         }
       }
     }
@@ -181,7 +184,7 @@
     outline: none;
     cursor: pointer;
     z-index: 1010;
-    margin-top: 2rem;
+    margin-top: 0;
 
     span {
       position: relative;
@@ -189,7 +192,7 @@
       width: 2.8rem;
       height: .3rem;
       margin: 0 0 .5rem 0;
-      background-color: $c-white;
+      background-color: $c-main;
       transition: background-color .25s ease-in-out, transform 0.25s ease-in-out;
 
       &:last-of-type {

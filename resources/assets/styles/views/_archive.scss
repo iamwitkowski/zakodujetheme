@@ -1,4 +1,17 @@
 .listing {
   display: grid;
   gap: 3rem;
+
+  @include down(md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.site-main {
+  &.--archive {
+    .row {
+
+    }
+  }
 }

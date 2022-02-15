@@ -6,6 +6,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @include down(md) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__content {
@@ -15,6 +18,13 @@
     height: 30rem;
     left: 0;
     box-shadow: $box-shadow;
+
+    @include down(md) {
+      width: 100%;
+      position: relative;
+      margin-top: -25rem;
+
+    }
   }
 
   &__image {
@@ -23,6 +33,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include down(md) {
+      width: 100%;
+    }
   }
 
   &__accent {

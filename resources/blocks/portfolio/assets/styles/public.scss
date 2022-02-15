@@ -3,12 +3,19 @@
 .block-portfolio {
   position: relative;
   padding: 10rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 
 
   &__title {
     color: $c-white;
     text-align: center;
     font-size: 6rem;
+    @include down(md) {
+      font-size: 3rem;
+    }
   }
 
   &__subtitle {

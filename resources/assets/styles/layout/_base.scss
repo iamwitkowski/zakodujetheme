@@ -13,6 +13,9 @@
 .row {
   display: flex;
   justify-content: space-between;
+  @include down(md) {
+    flex-direction: column;
+  }
 }
 
 a {
@@ -70,4 +73,11 @@ a {
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+
+.block {
+  @include down(md) {
+    padding: 4rem 0!important;
+  }
 }

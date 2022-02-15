@@ -16,8 +16,8 @@
     <div class="post-tile__data --excerpt">
       {!! the_excerpt(); !!}
     </div>
-    <a class="button --white --shadow --circle" href="https://www.facebook.com/sharer/sharer.php?u={!! get_the_permalink() !!}" target="_blank">
-      @icon('share')
+    <a class="button --shadow --circle" href="https://www.facebook.com/sharer/sharer.php?u={!! get_the_permalink() !!}" target="_blank">
+
     </a>
   </header>
   <a href="{!! get_the_permalink() !!}">

@@ -6,6 +6,10 @@
   display: flex;
   justify-content: space-between;
   transition: .2s ease-in-out;
+  @include down(md) {
+    flex-direction: column;
+  }
+
   &:hover {
     box-shadow: $box-shadow-hover;
     background: $c-light-gray;
@@ -21,6 +25,11 @@
       max-width: 23rem;
       height: 23rem;
       border-radius: 2rem;
+      @include down(md) {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 2rem;
+      }
     }
   }
 

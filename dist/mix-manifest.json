@@ -3,6 +3,7 @@
     "/blocks/base/public.css": "/blocks/base/public.css",
     "/blocks/categories/public.css": "/blocks/categories/public.css",
     "/blocks/contact/public.css": "/blocks/contact/public.css",
+    "/blocks/footercontact/public.css": "/blocks/footercontact/public.css",
     "/blocks/logocarousel/public.css": "/blocks/logocarousel/public.css",
     "/blocks/offer/public.css": "/blocks/offer/public.css",
     "/blocks/portfolio/public.css": "/blocks/portfolio/public.css",
@@ -11,6 +12,7 @@
     "/styles/admin.css": "/styles/admin.css",
     "/blocks/categories/public.js": "/blocks/categories/public.js",
     "/blocks/contact/public.js": "/blocks/contact/public.js",
+    "/blocks/footercontact/public.js": "/blocks/footercontact/public.js",
     "/blocks/logocarousel/public.js": "/blocks/logocarousel/public.js",
     "/blocks/offer/public.js": "/blocks/offer/public.js",
     "/blocks/portfolio/public.js": "/blocks/portfolio/public.js",
@@ -19,5 +21,7 @@
     "/scripts/main.js": "/scripts/main.js",
     "/scripts/manifest.js": "/scripts/manifest.js",
     "/scripts/vendor.js": "/scripts/vendor.js",
-    "/images/back.png": "/images/back.png"
+    "/images/back.png": "/images/back.png",
+    "/images/share.svg": "/images/share.svg",
+    "/blocks/contact/images/back.png": "/blocks/contact/images/back.png"
 }

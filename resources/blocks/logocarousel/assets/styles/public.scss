@@ -3,6 +3,9 @@
 .block-logo-carousel {
   position: relative;
   padding: 10rem 0;
+  @include down(xl) {
+    overflow-x: scroll;
+  }
 
   h2 {
     text-align: center;

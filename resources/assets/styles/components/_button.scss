@@ -75,3 +75,23 @@
     margin: auto;
   }
 }
+
+
+.nav-previous, .nav-next {
+  position: relative;
+  padding: 2rem;
+  border: .1rem solid $c-gray;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: .3s ease-in-out;
+  border-radius: 2.5rem;
+  width: 15rem;
+  margin-bottom: 6rem;
+
+  &:hover {
+    background: $c-gray;
+    cursor: pointer;
+    border: .1rem solid $c-gray-dark;
+  }
+
+}

@@ -13,4 +13,23 @@ require dirname(__FILE__).'/inc/bootstrap.php';
  */
 
 
-  add_filter( 'use_block_editor_for_post', '__return_false' );
+ // add_filter( 'use_block_editor_for_post', '__return_false' );
+
+
+  function zkd_acf_orphans($value, $post_id, $field)
+  {
+    if ( class_exists( 'iworks_orphan' ) )
+    {
+      $orphan = new \iworks_orphan();
+      $value = $orphan->replace( $value );
+    }
+    return $value;
+  }
+
+  add_filter('acf/format_value/type=textarea', 'zkd_acf_orphans', 10, 3);
+  add_filter('acf/format_value/type=wysiwyg', 'zkd_acf_orphans', 10, 3);
+
+  function zkd_custom_excerpt_length( $length ) {
+    return 15;
+  }
+  add_filter( 'excerpt_length', 'zkd_custom_excerpt_length', 999 );

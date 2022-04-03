@@ -6,6 +6,9 @@
   @include down(xl) {
     overflow-x: scroll;
   }
+  .row {
+    flex-direction: row;
+  }
 
   h2 {
     text-align: center;
@@ -24,6 +27,10 @@
 
       &:hover {
         filter: grayscale(0);
+      }
+
+      @include down(md) {
+        max-width: 6rem;
       }
     }
   }

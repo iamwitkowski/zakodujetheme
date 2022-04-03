@@ -2,7 +2,7 @@
 /**
  * Theme: Widgets
  *
- * 
+ *
  */
 namespace zkd\Theme;
 
@@ -43,6 +43,34 @@ class Widgets
       'before_title' => '<h4>',
       'after_title' => '</h4>'
     ]);
+
+    register_sidebar([
+      'name' => 'Sidebar - oferta',
+      'id' => 'offer-sidebar',
+      'before_widget' => '<div class="%1$s %2$s widget">',
+      'after_widget' => '</div>',
+      'before_title' => '<h4>',
+      'after_title' => '</h4>'
+    ]);
+
+
+    register_sidebar([
+      'name' => 'Widget na stronie głównej',
+      'id' => 'fp-widget',
+      'before_widget' => '<div class="%1$s %2$s widget">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3>',
+      'after_title' => '</h3>'
+    ]);
+
+    register_sidebar([
+      'name' => 'Sidebar - blog',
+      'id' => 'sidebar-1',
+      'before_widget' => '<div class="%1$s %2$s widget">',
+      'after_widget' => '</div>',
+      'before_title' => '<h4>',
+      'after_title' => '</h4>'
+    ]);
   }
 
   public function getFooterIds(): array
@@ -55,4 +83,25 @@ class Widgets
     }
     return $widgets;
   }
+
+
+  public function getFrontpageId(): array
+  {
+    $widget = dynamic_sidebar('fp-widget');
+    return $widget;
+  }
+
+
+  public function getSidebarIds(): array
+  {
+    $widgets = array();
+    for ($i = 1; $i <= 4; $i++) {
+      if (is_active_sidebar('sidebar-' . $i)) :
+        $widgets[] = 'sidebar-' . $i;
+      endif;
+    }
+    return $widgets;
+  }
 }
+
+

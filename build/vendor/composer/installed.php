@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => 'df4bec768bd22dbb00623867c4b78f090fd5492f',
+    'reference' => '33d684734eabc19422cad3be97afe6eeef8d5444',
     'name' => 'zkd/starter',
   ),
   'versions' => 
@@ -331,12 +331,12 @@
     ),
     'zkd/starter' => 
     array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => 'df4bec768bd22dbb00623867c4b78f090fd5492f',
+      'reference' => '33d684734eabc19422cad3be97afe6eeef8d5444',
     ),
   ),
 );

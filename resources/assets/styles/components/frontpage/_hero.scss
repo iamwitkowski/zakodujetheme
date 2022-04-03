@@ -2,6 +2,7 @@
   &__hero {
     height: 70vh;
     position: relative;
+
     &.text {
       display: flex;
       flex-direction: column;
@@ -37,11 +38,24 @@
       background-image: url("../images/back.png");
       @include down(md) {
         display: none;
+        position: relative;
+        clip-path: none;
+        width: 100%;
+        height: 10rem;
       }
     }
 
     &--buttons {
       max-width: 25rem;
+      @include down(md) {
+        max-width: 100%;
+        .button {
+          width: 20rem;
+          margin: auto;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+      }
     }
   }
 }

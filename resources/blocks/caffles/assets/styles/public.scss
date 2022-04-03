@@ -1,0 +1,40 @@
+@import '../../../../assets/styles/block';
+
+.block-caffles {
+  position: relative;
+
+  .row {
+    justify-content: space-around;
+  }
+
+  &__item {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    width: 22%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    @include down(md) {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 3rem;
+    }
+    &--price {
+      font-size: 6rem;
+      font-weight: 700;
+      span {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+    &--content {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .button {
+      text-align: center;
+    }
+  }
+}

@@ -45,6 +45,16 @@ class Widgets
     ]);
 
     register_sidebar([
+      'name' => 'Sidebar - oferta',
+      'id' => 'offer-sidebar',
+      'before_widget' => '<div class="%1$s %2$s widget">',
+      'after_widget' => '</div>',
+      'before_title' => '<h4>',
+      'after_title' => '</h4>'
+    ]);
+
+
+    register_sidebar([
       'name' => 'Widget na stronie głównej',
       'id' => 'fp-widget',
       'before_widget' => '<div class="%1$s %2$s widget">',
@@ -54,7 +64,7 @@ class Widgets
     ]);
 
     register_sidebar([
-      'name' => 'Sidebar',
+      'name' => 'Sidebar - blog',
       'id' => 'sidebar-1',
       'before_widget' => '<div class="%1$s %2$s widget">',
       'after_widget' => '</div>',
@@ -93,3 +103,5 @@ class Widgets
     return $widgets;
   }
 }
+
+

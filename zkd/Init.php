@@ -33,7 +33,7 @@ class Init extends Singleton
     $this->addPublic('Module\\Gutenberg\\Gutenberg', 'gutenberg');
     $this->addPrivate('Module\\Media\\Media');
 
-    $this->addPublic('Module\\Example\\Example', 'Example');
+    $this->addPublic('Module\\Portfolio\\Portfolio', 'Portfolio');
   }
 
   public function addPublic(string $name, string $label = '')

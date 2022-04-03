@@ -66,6 +66,9 @@
   position: absolute;
   bottom: 2rem;
   width: 11rem;
+  @include down(md) {
+    display: none;
+  }
 
   button {
     width: 4rem;
@@ -89,5 +92,12 @@
     &:after {
       display: none;
     }
+  }
+}
+
+
+.swiper-wrapper {
+  @include down(md) {
+    padding-right: 3rem;
   }
 }

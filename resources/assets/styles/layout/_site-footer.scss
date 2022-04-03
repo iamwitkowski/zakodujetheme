@@ -21,4 +21,18 @@
       flex-direction: column;
     }
   }
+  &__widget {
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      li {
+        a {
+          color: $c-white;
+          margin-bottom: 2rem;
+          display: block;
+        }
+      }
+    }
+  }
+
 }

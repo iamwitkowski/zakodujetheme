@@ -27,31 +27,38 @@ export const handleNavigationToggler = () => {
   }
 
 
-  window.addEventListener("scroll", showSticky);
-  function showSticky() {
-    var y = window.scrollY;
-    if (y >= 500) {
-      document.querySelector(".single-header-sticky").style.top = "50px";
+  const stickybar = document.querySelector(".single-header-sticky");
+
+  if(stickybar) {
+    window.addEventListener("scroll", showSticky);
+    function showSticky() {
+      var y = window.scrollY;
+      if (y >= 500) {
+        document.querySelector(".single-header-sticky").style.top = "50px";
+      }
+      else {
+        document.querySelector(".single-header-sticky").style.top = "-200px";
+      }
     }
-    else {
-      document.querySelector(".single-header-sticky").style.top = "-100px";
+
+
+    let processScroll = () => {
+      let docElem = document.documentElement,
+        docBody = document.body,
+        scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
+        scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
+        scrollPercent = scrollTop / scrollBottom * 100 + '%';
+
+      // console.log(scrollTop + ' / ' + scrollBottom + ' / ' + scrollPercent);
+
+      document.querySelector(".single-header-sticky__progressbar").style.setProperty("--scrollAmount", scrollPercent);
     }
+
+    document.addEventListener('scroll', processScroll);
+
   }
 
 
-  let processScroll = () => {
-    let docElem = document.documentElement,
-      docBody = document.body,
-      scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
-      scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
-      scrollPercent = scrollTop / scrollBottom * 100 + '%';
-
-    // console.log(scrollTop + ' / ' + scrollBottom + ' / ' + scrollPercent);
-
-    document.querySelector(".single-header-sticky__progressbar").style.setProperty("--scrollAmount", scrollPercent);
-  }
-
-  document.addEventListener('scroll', processScroll);
 
 
 };

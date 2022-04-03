@@ -6,11 +6,7 @@
 
 @section('content')
   <main class="site-main --page --custom">
-    @include('components.hero')
-    @include('components.history')
-    @include('components.slider')
-    @include('components.products')
-    @include('components.cooperation')
-    @include('components.contact')
+   @include('components.frontpage.hero')
+      @php the_content() @endphp
   </main>
 @endsection

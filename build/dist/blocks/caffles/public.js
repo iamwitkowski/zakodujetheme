@@ -1,0 +1,1 @@
+"use strict";(window.zkdStarterWebpackJsonpCallback=window.zkdStarterWebpackJsonpCallback||[]).push([[3],{1:function(n,t,e){n.exports=e("qDn5")},qDn5:function(n,t){document.addEventListener("DOMContentLoaded",function(n){var t=document.querySelectorAll(".block-base");0!==t.length&&t.forEach(function(n){var t=n.dataset.block;window[t].data})},!1)}},[[1,0]]]);

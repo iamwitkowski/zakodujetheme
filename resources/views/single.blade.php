@@ -9,7 +9,12 @@
         @include('partials.content')
         @include('components.sidebar')
       </div>
+		<div class="wrapper">
+					<?php comments_template(); ?>
+			
+		</div>
+
     </div>
     @endwhile
-  </main>
+ź  </main>
 @endsection

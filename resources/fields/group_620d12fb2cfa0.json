@@ -75,6 +75,25 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_624b63d2a65eb",
+                            "label": "Opis",
+                            "name": "desc",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_620d17c2f52e0",
                             "label": "Treść",
                             "name": "content",
@@ -130,5 +149,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1648989762
+    "show_in_rest": 0,
+    "modified": 1649107931
 }

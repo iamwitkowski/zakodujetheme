@@ -9,7 +9,7 @@
       </div>
     </div>
   </div>
-  <div class="front-page__hero background">
+  <div class="front-page__hero background" style="background-image: url({{$get_hero_image}})">
     <div class="particle"></div>
     <div class="particle"></div>
     <div class="particle"></div>
